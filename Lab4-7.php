@@ -8,6 +8,13 @@
             echo "The value of the constant is <b>";
             echo x;
             echo "</b>";
+            echo "<br>";
+            $x=20;
+            //define("x", 20);
+            echo "x = ". x;
+            echo "<br>";
+            echo "\$x = " . $x;
+
         ?>
     </font>
 </body>
