@@ -2,7 +2,7 @@
 <html lang="en">
 <head><title> Form for Calculation </title></head>
 <body>
-    <form method="get" action="lab5-9cal.php">
+    <form method="post" action="lab5-9cal.php">
         <table border="1" align="center" width="500">
             <tr>
                 <td colspan="2" align="center"><big> Arithmatic Operator </big></td>

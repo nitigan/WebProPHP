@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title> โปรแกรมคานวณเกรด </title>
+<title> โปรแกรมคำนวณเกรด </title>
 </head>
 <body>
     <?php
