@@ -19,13 +19,38 @@
         echo "Midterm : <i> $midterm </i> <br/>";
         echo "Final : <i> $final </i> <br/>";
         $total = $hw + $midterm + $final;
-        
+        ?>
+        <form method="post" action="ch6-11result.php">
+            <input type="submit">
+        </form>
+        <?php
         echo "Total Score : $total <br>";
-        if ($total >= 80) echo "Result Grade : A<br>";
-        elseif ($total >= 70) echo "Result Grade : B<br>";
-        elseif ($total >= 60) echo "Result Grade : C<br>";
-        elseif ($total >= 50) echo "Result Grade : D<br>";
-        else echo "Result Grade : F<br>";
+        if ($total >= 80) {
+            $grede = 'A';
+            echo "Result Grade <br>";
+            echo "<img src=image/A.jpg width=100px><br>";
+
+        }
+        elseif ($total >= 70) {
+            $grede = 'B';
+            echo "Result Grade : <br>";
+            echo "<img src=image/B.jpg width=100px><br>";
+        }
+        elseif ($total >= 60) {
+            $grede = 'C';
+            echo "Result Grade : <br>";
+            echo "<img src=image/C.jpg width=100px><br>";
+        }
+        elseif ($total >= 50) {
+            $grede = 'D';
+            echo "Result Grade : <br>";
+            echo "<img src=image/D.jpg width=100px><br>";
+        }
+        else {
+            $grede = 'F';
+            echo "Result Grade : <br>";
+            echo "<img src=image/F.jpg width=100px><br>";
+        }
         echo "<br>";
         echo "<a href='lab6-11.php'> <big>Back </big></a>";
     ?>
