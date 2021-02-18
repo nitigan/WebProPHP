@@ -19,7 +19,7 @@
  
         </form>
         <?php
-        $data = "King Mongkut's University";
+        $data = "nitigan";
         $count=1;
         foreach (count_chars($data, 1) as $i => $val) {
             if($count==1){

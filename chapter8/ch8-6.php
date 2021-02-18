@@ -38,15 +38,15 @@
         echo '<hr>';
         if ($n == 1) {
             echo "การเรียกใช้ฟังก์ชันแบบ Pass by Value<br>";
-            echo "ค่าของ \$num ก่อนเรียกฟังก์ชัน Test มีค่า = $num <br>";
+            echo "ค่าของ \$num ก่อนเรียกฟังก์ชัน Test Value มีค่า = $num <br>";
             TestValue( $num );
-            echo "ค่าของ \$num หลังเรียกฟังก์ชัน Test มีค่า = $num <br>";
+            echo "ค่าของ \$num หลังเรียกฟังก์ชัน Test Value มีค่า = $num <br>";
         }
         else {
             echo "การเรียกใช้ฟังก์ชันแบบ Pass by Reference<br>";
-            echo "ค่าของ \$num ก่อนเรียกฟังก์ชัน Test มีค่า = $num <br>";
+            echo "ค่าของ \$num ก่อนเรียกฟังก์ชัน Test Reference มีค่า = $num <br>";
             TestReference( $num );
-            echo "ค่าของ \$num หลังเรียกฟังก์ชัน Test มีค่า = $num <br>";
+            echo "ค่าของ \$num หลังเรียกฟังก์ชัน Test Reference มีค่า = $num <br>";
         }
     }
     else {
