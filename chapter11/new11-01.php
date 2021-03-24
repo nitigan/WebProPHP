@@ -11,7 +11,7 @@
 <?php  //------------ส่วนการเปิด Connection ในการติดต่อกับ MySQL ----------------
 $hostname = "localhost";
 $username = "root";
-$password = "ใส่รหัสผ่านฐานข้อมูล";
+$password = "root";
 $dbname = "itbook";
 
 $conn = new mysqli($hostname, $username, $password, $dbname);
