@@ -23,7 +23,7 @@
     echo "<tr><td> ชื่อหนังสือ : </td><td>".$data["BookName"]."</td></tr>";
     echo "<tr><td> ประเภทหนังสือ : </td><td>".$data["TypeID"]."</td></tr>";
     echo "<tr><td> สถานะหนังสือ : </td><td>".$data["StatusID"]."</td></tr>";
-    echo "<tr><td> สำนักพิมพ์ : </td><td>".$data["Publish"]."</td></tr>";
+    echo "<tr><td> สานักพิมพ์ : </td><td>".$data["Publish"]."</td></tr>";
     echo "<tr><td> ราคาซื้อ : </td><td>".$data["UnitPrice"]."</td></tr>";
     echo "<tr><td> ราคาเช่า : </td><td>".$data["UnitRent"]."</td></tr>";
     echo "<tr><td> รูปภาพ : </td><td>".$image."</td></tr>";
