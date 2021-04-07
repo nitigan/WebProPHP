@@ -10,7 +10,11 @@
     mysqli_set_charset($conn,"utf8");
 
     $id = $_GET['id'];
-    $sql = "select * from book where BookID = $id";
+   //$sql = "select * from book where BookID = $id";
+   $sql = "select * from book 
+   inner join statusbook on book.statusID = statusbook.statusID 
+   inner join typebook on book.typeID = typebook.typeID 
+   where book.bookID = $id";
     $result = mysqli_query($conn,$sql);
     $data = mysqli_fetch_array($result);
     $Path="pictures/"; //ระบุ path ของไฟล์รูปภาพที่จัดเก็บไว้ใน server
@@ -21,8 +25,8 @@
     </B></td></tr>";
     echo "<tr><td> รหัสหนังสือ : </td><td>".$data["BookID"]."</td></tr>";
     echo "<tr><td> ชื่อหนังสือ : </td><td>".$data["BookName"]."</td></tr>";
-    echo "<tr><td> ประเภทหนังสือ : </td><td>".$data["TypeID"]."</td></tr>";
-    echo "<tr><td> สถานะหนังสือ : </td><td>".$data["StatusID"]."</td></tr>";
+    echo "<tr><td> ประเภทหนังสือ : </td><td>".$data["TypeName"]."</td></tr>";
+    echo "<tr><td> สถานะหนังสือ : </td><td>".$data["StatusName"]."</td></tr>";
     echo "<tr><td> สำนักพิมพ์ : </td><td>".$data["Publish"]."</td></tr>";
     echo "<tr><td> ราคาซื้อ : </td><td>".$data["UnitPrice"]."</td></tr>";
     echo "<tr><td> ราคาเช่า : </td><td>".$data["UnitRent"]."</td></tr>";
