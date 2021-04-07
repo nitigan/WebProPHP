@@ -38,7 +38,7 @@
       echo "</a></font></td>\n";
       $a++;
     }
-?>
+  ?>
 </tr></table><BR><BR>
 <div align = "center"> <A HREF="addbook.php">เพิ่มรายการหนังสือ</A></div><BR>
 <?php
