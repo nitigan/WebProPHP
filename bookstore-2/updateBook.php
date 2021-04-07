@@ -25,17 +25,17 @@
       echo "<tr><td align=center colspan = 2 bgcolor =#FF99CC><B> แก้ไข รายละเอียดหนังสือ
       </B></td></tr>";
     
-      echo "<tr><td> รหัสหนังสือ : </td><td><input type=\"text\" name=\"BookID\" value=\"".$data["BookID"]."\"</td></tr>";
-      echo "<tr><td> ชื่อหนังสือ : </td><td><input type=\"text\" name=\"BookName\" value=\"".$data["BookName"]."\"</td></tr>";
-      echo "<tr><td> สำนักพิมพ์ : </td><td><input type=\"text\" name=\"Publish\" value=\"".$data["Publish"]."\"</td></tr>";
-      echo "<tr><td> ราคาซื้อ : </td><td><input type=\"text\" name=\"UnitPrice\" value=\"".$data["UnitPrice"]."\"</td></tr>";
-      echo "<tr><td> ราคาเช่า : </td><td><input type=\"text\" name=\"UnitRent\" value=\"".$data["UnitRent"]."\"</td></tr>";
+      echo "<tr><td> รหัสหนังสือ : </td><td><input type=\"text\" name=\"BookID\" value=\"".$data["BookID"]."\" readonly></td></tr>";
+      echo "<tr><td> ชื่อหนังสือ : </td><td><input type=\"text\" name=\"BookName\" value=\"".$data["BookName"]." \"></td></tr>";
+      echo "<tr><td> สำนักพิมพ์ : </td><td><input type=\"text\" name=\"Publish\" value=\"".$data["Publish"]."\"></td></tr>";
+      echo "<tr><td> ราคาซื้อ : </td><td><input type=\"text\" name=\"UnitPrice\" value=\"".$data["UnitPrice"]."\"></td></tr>";
+      echo "<tr><td> ราคาเช่า : </td><td><input type=\"text\" name=\"UnitRent\" value=\"".$data["UnitRent"]."\"></td></tr>";
       echo "</table>";
     ?>
   
   <BR>
   <div align = "center">
-      <input type="submit" name="Submit" value="บันทึกข้อมูล" style="cursor:hand">
+      <input type="submit" name="Submit" value="แก้ไขข้อมูล" style="cursor:hand">
       <input type="reset" name="Reset" value="ยกเลิก" style="cursor:hand">
     </div>
     </form>

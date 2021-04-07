@@ -7,15 +7,15 @@
     mysqli_set_charset($conn,"utf8");
     $BookID=$_POST['BookID'];
     $BookName=$_POST['BookName'];
-    $TypeID=$_POST['TypeID'];
-    $StatusID=$_POST['StatusID'];
+    //$TypeID=$_POST['TypeID'];
+    //$StatusID=$_POST['StatusID'];
     $Publish=$_POST['Publish'];
     $UnitPrice=$_POST['UnitPrice'];
     $UnitRent=$_POST['UnitRent'];
-    $DayAmount=$_POST['DayAmount'];
-    $max_size = $_POST['max_size'];
-    $ImageFile = $_FILES['ImageFile'];
-    
+    //$DayAmount=$_POST['DayAmount'];
+    //$max_size = $_POST['max_size'];
+    //$ImageFile = $_FILES['ImageFile'];
+    /*
     $Flag = false;
 
     
@@ -44,15 +44,15 @@
             echo "onclick=\"history.back();\" style=\"cursor:hand\"></CENTER>";
             $Flag = false;
         }
-    }
-    if($flag)
+    }*/
+    if(isset($BookID))
     {
         $BDate = date("Y-m-d");
 
-        $sqltxt = mysqli_query($conn,"INSERT INTO book (BookID,BookName,Publish,UnitPrice,UnitRent) VALUES
-        ('$BookID','$BookName','$Publish','$UnitPrice','$UnitRent')") or die (mysqli_error($conn));
+        $sqltxt = mysqli_query($conn,"UPDATE book SET BookName='$BookName',Publish='$Publish',UnitPrice='$UnitPrice',UnitRent='$UnitRent' 
+        WHERE BookID='$BookID'") or die (mysqli_error($conn));
 
-        echo "<br><br><CENTER><H2>บันทึกข้อมูลเรียบร้อย</H2><BR><BR></CENTER>";
+        echo "<br><br><CENTER><H2>แก้ไขข้อมูลเรียบร้อย</H2><BR><BR></CENTER>";
         echo "<CENTER><A HREF=\"listofbook.php\">แสดงข้อมูลทั้งหมด</A></CENTER>";
     }
     mysqli_close($conn);
